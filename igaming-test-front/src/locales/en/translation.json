@@ -1,0 +1,25 @@
+{
+  "meteorites": {
+    "yearFrom": "Year from",
+    "yearTo": "Year to",
+    "class": "Class",
+    "sorting": "Sorting",
+    "findMeteorites": "Find meteorites",
+    "year": "Year",
+    "meteoritesCount": "Meteorite count",
+    "massSum": "Total mass",
+    "total": "Total",
+    "namePart": "Name part",
+    "namePartPlaceholder": "Enter 10 symbols",
+    "sorting.asc": "Ascending",
+    "sorting.desc": "Descending"
+  },
+  "http": {
+    "400": "Error 400: Bad request.",
+    "404": "Error 404: Data not found.",
+    "5xx": "Server error. Please try again later.",
+    "unexpected": "Unexpected error: {{status}}",
+    "noResponse": "No response received from the server.",
+    "unknown": "An unknown error occurred."
+  }
+}

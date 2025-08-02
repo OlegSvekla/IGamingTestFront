@@ -1,0 +1,118 @@
+.meteoritesContainer {
+  padding: 2% 2%;
+  background-color: #f8f9fa;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+
+  .filterPanel {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    flex-wrap: wrap;
+
+    .dropdownGroup {
+      display: flex;
+      flex-direction: column;
+      font-size: 1.5cqh;
+      min-width: 160px;
+
+      span {
+        margin-bottom: 2%;
+        font-weight: 600;
+      }
+
+      label {
+        font-weight: 600;
+        margin-bottom: 4px;
+        color: #333;
+      }
+
+      input[type="text"] {
+        padding: 8px 12px;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        font-size: 14px;
+        transition: border-color 0.2s ease;
+
+        &:focus {
+          border-color: #007bff;
+          outline: none;
+        }
+
+        &::placeholder {
+          color: #aaa;
+        }
+      }
+    }
+
+    .findMeteoritesButton {
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      padding: 1% 5%;
+      font-size: 1.5cqh;
+      font-weight: 600;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, box-shadow 0.2s ease;
+      box-shadow: 0 2px 6px rgba(0, 123, 255, 0.4);
+
+      &:hover {
+        background-color: #0056b3;
+        box-shadow: 0 4px 12px rgba(0, 86, 179, 0.6);
+      }
+
+      &:active {
+        background-color: #004494;
+        box-shadow: none;
+      }
+
+      &:focus {
+        outline: none;
+        box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5);
+      }
+
+      &:disabled {
+        background-color: #a0c5f7;
+        cursor: not-allowed;
+        box-shadow: none;
+        color: #e1e7f0;
+      }
+    }
+  }
+
+  .tableWrapper {
+    max-height: 40vh;
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 0.4rem;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background-color: #c3c0c0;
+      border-radius: 4px;
+    }
+
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      border: 1px solid #ccc;
+
+      th,
+      td {
+        padding: 10px 16px;
+        border: 1px solid #ccc;
+        text-align: left;
+      }
+
+      th {
+        background-color: #f5f5f5;
+      }
+    }
+  }
+}
